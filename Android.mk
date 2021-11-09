@@ -16,4 +16,6 @@ LOCAL_CFLAGS := -Wall -Werror
 
 LOCAL_32_BIT_ONLY := true
 
+LOCAL_PROPRIETARY_MODULE := true
+
 include $(BUILD_EXECUTABLE)
