@@ -107,7 +107,7 @@
 #define EXIF_IMAGE_DESCRIPTION_SIZE 100
 
 #define MAX_INFLIGHT_REQUESTS  6
-#define MAX_INFLIGHT_BLOB      6
+#define MAX_INFLIGHT_BLOB      10
 #define MIN_INFLIGHT_REQUESTS  3
 #define MIN_INFLIGHT_60FPS_REQUESTS (6)
 #define MAX_INFLIGHT_REPROCESS_REQUESTS 1
@@ -1248,7 +1248,7 @@ typedef struct {
     cam_dimension_t fd_frame_dim;              /* frame dims on which fd is applied */
     uint8_t update_flag;                       /* flag to inform whether HAL needs to send cb
                                                 * to app or not */
-    char test1[160];
+    char xiaomi_reserved[160];
 } cam_face_detection_data_t;
 
 // definition of composite face detection data
@@ -2167,8 +2167,8 @@ typedef enum {
     CAM_INTF_META_SNAP_CROP_INFO_CPP, /* 190 */
     /* parameter for enabling DCRF */
     CAM_INTF_PARM_DCRF,
-    /* metadata tag for DCRF info */
     XM_01,
+    /* metadata tag for DCRF info */
     CAM_INTF_META_DCRF,
     /* FLIP mode parameter*/
     CAM_INTF_PARM_FLIP,
