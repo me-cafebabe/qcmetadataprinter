@@ -2166,6 +2166,7 @@ typedef enum {
     /* parameter for enabling DCRF */
     CAM_INTF_PARM_DCRF,
     /* metadata tag for DCRF info */
+    XM_01,
     CAM_INTF_META_DCRF,
     /* FLIP mode parameter*/
     CAM_INTF_PARM_FLIP,
