@@ -21,6 +21,11 @@ typedef uint32_t (*get_size_of_t)(cam_intf_parm_type_t);
 
 void* find_library_handle() {
     void* handle;
+    handle = dlopen("test.so", RTLD_LAZY);
+    if (handle) {
+        return handle;
+    }
+
     handle = dlopen(CAM_LIB_MCT, RTLD_LAZY);
     if (handle) {
         return handle;
