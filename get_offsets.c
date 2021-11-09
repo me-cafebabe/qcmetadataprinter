@@ -373,7 +373,7 @@ int main() {
     PRINT(CAM_INTF_META_LENS_STATE,pMetadata);
     PRINT(CAM_INTF_META_LENS_OPT_STAB_MODE,pMetadata);
     PRINT(CAM_INTF_META_VIDEO_STAB_MODE,pMetadata);
-    PRINT(CAM_INTF_META_LENS_FOCUS_STATE,pMetadata);
+    //PRINT(CAM_INTF_META_LENS_FOCUS_STATE,pMetadata);
     PRINT(CAM_INTF_META_NOISE_REDUCTION_MODE,pMetadata);
     PRINT(CAM_INTF_META_NOISE_REDUCTION_STRENGTH,pMetadata);
     PRINT(CAM_INTF_META_SCALER_CROP_REGION,pMetadata);
@@ -401,11 +401,10 @@ int main() {
     PRINT(CAM_INTF_META_EXIF_DEBUG_BESTATS,pMetadata);
     PRINT(CAM_INTF_META_EXIF_DEBUG_BHIST,pMetadata);
     PRINT(CAM_INTF_META_EXIF_DEBUG_3A_TUNING,pMetadata);
-    PRINT(CAM_INTF_META_ASD_SCENE_CAPTURE_TYPE,pMetadata);
+    //PRINT(CAM_INTF_META_ASD_SCENE_CAPTURE_TYPE,pMetadata);
     PRINT(CAM_INTF_PARM_EFFECT,pMetadata);
     /* Defining as int32_t so that this array is 4 byte aligned */
     PRINT(CAM_INTF_META_PRIVATE_DATA,pMetadata);
-            MAX_METADATA_PRIVATE_PAYLOAD_SIZE_IN_BYTES / 4);
 
     /* Following are Params only and not metadata currently */
     PRINT(CAM_INTF_PARM_HAL_VERSION,pMetadata);
