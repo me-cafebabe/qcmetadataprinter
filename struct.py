@@ -1,6 +1,6 @@
-#!/bin/python3
+#!/usr/bin/python3
 
-with open('../camera/QCamera2/stack/common/cam_intf.h', 'r') as f:
+with open('include/cam_intf.h', 'r') as f:
     data = f.read()
 f.closed
 

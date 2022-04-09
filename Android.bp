@@ -1,0 +1,12 @@
+cc_binary {
+    name: "get_offsets",
+    vendor: true,
+    srcs: ["get_offsets.c"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+    header_libs: ["generated_kernel_headers"],
+    local_include_dirs: ["include/"],
+    compile_multilib: "32",
+}
